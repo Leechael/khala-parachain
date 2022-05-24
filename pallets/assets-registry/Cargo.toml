@@ -102,4 +102,5 @@ std = [
 	"xcm/std",
 	"xcm-executor/std",
 	"xcm-builder/std",
+	"pallet-assets/std",
 ]
