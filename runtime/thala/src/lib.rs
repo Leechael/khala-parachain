@@ -1438,7 +1438,7 @@ impl pallet_collator_selection::Config for Runtime {
 
 parameter_types! {
     pub const ChainBridgeChainId: u8 = 1;
-    pub const WanBridgeChainId: u8 = 1;
+    pub const WanBridgeChainId: u128 = 1;
     pub const WanBridgeNativeTokenPair: u32 = 0;
     pub const ProposalLifetime: BlockNumber = 50400; // ~7 days
 }
@@ -1480,6 +1480,10 @@ impl wanbridge::Config for Runtime {
         FungiblesTransactor,
         XTransfer,
         assets_registry::NativeAssetFilter<ParachainInfo>,
+        assets_registry::ReserveAssetFilter<
+            ParachainInfo,
+            assets_registry::NativeAssetFilter<ParachainInfo>,
+        >,
     >;
     type AssetsRegistry = AssetsRegistry;
 }
