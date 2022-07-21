@@ -1236,7 +1236,7 @@ where
 			race_count: 0,
 			race_for_sale_count: 1,
 			race_giveaway_count: 0,
-			race_reserved_count: 1,
+			race_reserved_count: 0,
 		};
 		OriginOfShellsInventory::<T>::insert(
 			RarityType::Legendary,
@@ -1260,9 +1260,9 @@ where
 		);
 		let magic_nft_sale_info = NftSaleInfo {
 			race_count: 0,
-			race_for_sale_count: 10,
+			race_for_sale_count: 1,
 			race_giveaway_count: 0,
-			race_reserved_count: 10,
+			race_reserved_count: 0,
 		};
 		OriginOfShellsInventory::<T>::insert(
 			RarityType::Magic,
@@ -1286,7 +1286,7 @@ where
 		);
 		let prime_nft_sale_info = NftSaleInfo {
 			race_count: 0,
-			race_for_sale_count: 1250,
+			race_for_sale_count: 1,
 			race_giveaway_count: 0,
 			race_reserved_count: 0,
 		};
