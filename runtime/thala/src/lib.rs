@@ -887,14 +887,14 @@ impl pallet_rmrk_market::Config for Runtime {
 }
 
 parameter_types! {
-    pub const SecondsPerEra: u64 = 28_800; // 8 hours
+    pub const SecondsPerEra: u64 = 600; // 10 minutes
     pub const MinBalanceToClaimSpirit: Balance = 10 * DOLLARS;
     pub const LegendaryOriginOfShellPrice: Balance = 15_000 * DOLLARS;
     pub const MagicOriginOfShellPrice: Balance = 10_000 * DOLLARS;
     pub const PrimeOriginOfShellPrice: Balance = 500 * DOLLARS;
     pub const IterLimit: u32 = 1_000;
-    pub const FoodPerEra: u32 = 5;
-    pub const MaxFoodFeedSelf: u8 = 2;
+    pub const FoodPerEra: u32 = 2;
+    pub const MaxFoodFeedSelf: u8 = 1;
     pub const IncubationDurationSec: u64 = 1_209_600;
 }
 impl pallet_pw_nft_sale::Config for Runtime {
