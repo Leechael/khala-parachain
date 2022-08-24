@@ -895,7 +895,7 @@ parameter_types! {
     pub const IterLimit: u32 = 1_000;
     pub const FoodPerEra: u32 = 2;
     pub const MaxFoodFeedSelf: u8 = 1;
-    pub const IncubationDurationSec: u64 = 1_209_600;
+    pub const IncubationDurationSec: u64 = 3600; // 1 hour
 }
 impl pallet_pw_nft_sale::Config for Runtime {
     type Event = Event;
